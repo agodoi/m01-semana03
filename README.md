@@ -10,18 +10,354 @@ Design de interação
 
 Lógica algorítmica
 
-a) Inserção e modificação de elementos:
+## Inserção e modificação de elementos:
 
-Criar e adicionar elementos ao jogo (personagens, objetos, cenários).
-Modificar propriedades de elementos (posição, tamanho, cor, etc.).
-b) Identificação de colisões:
+Em um jogo, você pode criar, inserir e modificar elementos. Elementos são personagens, objetos e cenários. A aula de UX vai lhe trazer o máximo de conceitos sobre esse tema.
 
-Detectar colisões entre elementos do jogo.
-Implementar diferentes tipos de colisões (retangulares, circulares, etc.).
+### Criação de Elementos:
+
+A criação de elementos é o processo de gerar novos elementos HTML na página web usando JavaScript. Isso permite construir interfaces dinâmicas e interativas. As principais ferramentas para isso são:
+
+* document.createElement(tagName): Cria um novo elemento HTML com a tag especificada. Cria elementos HTML como divs, imagens e canvas.
+
+* document.createTextNode(text): Cria um novo nó de texto com o conteúdo especificado.
+
+Exemplo:
+```
+JavaScript
+const div = document.createElement('div');
+div.textContent = 'Olá mundo!';
+document.body.appendChild(div);
+```
+
+### Inserção de Elementos:
+
+Depois de criar um elemento, você precisa inseri-lo na estrutura do DOM (Document Object Model) para que ele seja visível na página. As principais formas de fazer isso são:
+
+* parentNode.appendChild(childNode): Insere um elemento como filho de outro elemento.
+
+* parentNode.insertBefore(newNode, referenceNode): Insere um elemento antes de outro elemento filho.
+
+* element.innerHTML = htmlString: Substitui o conteúdo HTML interno de um elemento.
+
+Exemplo:
+
+```
+JavaScript
+const div1 = document.getElementById('div1');
+const div2 = document.createElement('div');
+div2.textContent = 'Nova div';
+
+div1.appendChild(div2); // Insere 'div2' como filho de 'div1'
+```
+
+### Manipulação de Atributos:
+
+Além de criar e inserir elementos, você pode usar JavaScript para modificar seus atributos, como posição, tamanho, cor, etc. Isso inclui:
+
+* **element.setAttribute(attributeName, attributeValue):** Define um atributo para um elemento.
+
+* **element.getAttribute(attributeName):** Obtém o valor de um atributo de um elemento.
+
+* **element.removeAttribute(attributeName):** Remove um atributo de um elemento.
+
+Exemplo:
+
+```
+JavaScript
+const div = document.getElementById('div');
+div.setAttribute('id', 'nova-id'); // Altera o ID da div
+div.getAttribute('class'); // Obtém a classe da div
+div.removeAttribute('style'); // Remove o estilo da div
+```
+
+### 4. Estilização Dinâmica:
+
+Você pode usar JavaScript para modificar dinamicamente as propriedades CSS de um elemento. Isso permite criar animações e efeitos visuais interativos. As principais ferramentas para isso são:
+
+* **element.style.propertyName = value;:** Define uma propriedade CSS para um elemento.
+
+* **getComputedStyle(element).getPropertyValue(propertyName):** Obtém o valor de uma propriedade CSS de um elemento.
+
+Exemplo:
+
+```
+JavaScript
+const div = document.getElementById('div');
+div.style.backgroundColor = 'red'; // Altera a cor de fundo da div
+div.style.width = '100px'; // Altera a largura da div
+getComputedStyle(div).getPropertyValue('font-size'); // Obtém o tamanho da fonte da div
+```
+
+### Considerações Importantes:
+
+* **Desempenho:** Criar e inserir muitos elementos pode afetar o desempenho da página. Use técnicas de otimização como reutilização de elementos e fragmentação de documentos.
+
+* **Acessibilidade:** Certifique-se de que os elementos inseridos dinamicamente sejam acessíveis a todos os usuários, incluindo aqueles que usam tecnologias assistivas.
+
+* **Segurança:** Valide os dados inseridos dinamicamente para evitar ataques de script entre sites (XSS).
+
+### Recursos Adicionais:
+
+Documentação do DOM: https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model
+Tutoriais de JavaScript: https://www.w3schools.com/js/default.asp
+
+
+### Identificação de Colisões em Jogos JavaScript
+
+A detecção de colisões é um componente fundamental em jogos JavaScript, permitindo que objetos interajam uns com os outros de forma realista. Detectar colisões entre elementos do jogo pode ser implementada de diferentes tipos, como detectar se um retangular bateu em outro, se um círculo bateu em outro, etc.
+
+Exploremos as diferentes técnicas e seus pontos fortes e fracos:
+
+#### Métodos de Detecção de Colisões:
+
+* getBoundingClientRect: Retorna um objeto com as coordenadas e dimensões do elemento.
+
+* Vantagens: Simples de implementar, funciona com qualquer elemento HTML.
+
+* Desvantagens: Baixa precisão, não detecta colisões complexas.
+
+* checkCollision: Função personalizada que verifica se dois elementos colidem.
+
+* Vantagens: Permite implementar diferentes tipos de colisões.
+
+* Desvantagens: Mais complexa de implementar, requer conhecimento de geometria.
+
+#### Tipos de Colisões:
+
+* Colisão de Ponto: Verifica se um ponto está dentro de um elemento. Útil para detectar cliques em botões ou áreas específicas.
+
+* Colisão de Retângulo: Verifica se dois retângulos se interceptam. Esse é o método mais comum para detectar colisões em jogos simples.
+
+* Colisão de Polígono: Verifica se dois polígonos se interceptam. Permite detectar colisões mais complexas, como personagens com formas irregulares.
+
+* Colisão de Círculo: Verifica se dois círculos se interceptam. Útil para detectar colisões entre objetos circulares, como planetas ou bolas.
+
+### Bibliotecas de Detecção de Colisões:
+
+* Matter.js: Biblioteca popular que oferece física realista e facilita a detecção de colisões complexas.
+
+* Cannon.js: Biblioteca focada em física 3D, ideal para jogos com objetos tridimensionais.
+
+* PolyK: Biblioteca leve para detectar colisões de polígonos com alta performance.
+
+### Considerações Importantes:
+
+* Precisão: Escolha o método de detecção de colisão adequado ao nível de precisão necessário no seu jogo.
+
+* Desempenho: A detecção de colisões pode ser cara em termos de performance. Otimize seu código para evitar gargalos.
+
+* Complexidade: Equilibre a necessidade de precisão com a complexidade da implementação.
+
+
 c) Controles de movimento e eventos:
 
-Criar controles para mover personagens e objetos.
-Implementar eventos para interagir com o jogo (clique, toque, teclado).
+Cria controles para mover personagens e objetos, implementando eventos para interagir com o jogo, do tipo: clique, toque, teclado. 
+
+Eventos de Teclado:
+
+* keydown: Detecta quando uma tecla é pressionada.
+
+* keyup: Detecta quando uma tecla é solta.
+
+* keypress: Detecta quando um caractere é digitado.
+
+Eventos de Mouse:
+
+* click: Detecta quando o mouse é clicado em um elemento.
+
+* mousedown: Detecta quando o botão do mouse é pressionado em um elemento.
+
+* mouseup: Detecta quando o botão do mouse é solto em um elemento.
+
+* mousemove: Detecta o movimento do mouse sobre um elemento.
+
+Movimento de Elementos:
+
+* setInterval: Atualiza a posição de um elemento a cada intervalo de tempo.
+
+* requestAnimationFrame: Atualiza a posição de um elemento de forma suave.
+
+Exemplo:
+
+1. Configurando o Phaser:
+
+```
+const config = {
+  type: Phaser.AUTO,
+  width: 800,
+  height: 600,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 300 }
+    }
+  },
+  scene: {
+    preload: preload,
+    create: create,
+    update: update
+  }
+};
+
+const game = new Phaser.Game(config);
+```
+
+
+2. Carregando Recursos:
+
+```
+function preload() {
+  this.load.image('player', 'assets/player.png');
+}
+```
+
+
+3. Criando o Cenário e o Jogador:
+
+```
+function create() {
+  // Cria o cenário
+  const background = this.add.image(0, 0, 'background');
+  background.setOrigin(0, 0);
+
+  // Cria o jogador
+  this.player = this.physics.add.sprite(100, 100, 'player');
+  this.player.setCollideWorldBounds(true);
+
+  // Define as teclas de controle
+  this.cursors = this.input.keyboard.createCursorKeys();
+}
+```
+
+
+   
+5. Atualizando o Jogo:
+
+```
+function update() {
+  // Controla o movimento do jogador
+  if (this.cursors.left.isDown) {
+    this.player.setVelocityX(-160);
+  } else if (this.cursors.right.isDown) {
+    this.player.setVelocityX(160);
+  } else {
+    this.player.setVelocityX(0);
+  }
+
+  if (this.cursors.up.isDown) {
+    this.player.setVelocityY(-160);
+  } else if (this.cursors.down.isDown) {
+    this.player.setVelocityY(160);
+  } else {
+    this.player.setVelocityY(0);
+  }
+
+  // Adiciona lógica adicional para o seu jogo
+}
+```
+
+```
+// Cria as animações do jogador
+this.anims.create({
+  key: 'walk',
+  frames: this.anims.generateFrameNumbers('player', { start: 0, end: 3 }),
+  frameRate: 10,
+  repeat: -1
+});
+
+this.anims.create({
+  key: 'run',
+  frames: this.anims.generateFrameNumbers('player', { start: 4, end: 7 }),
+  frameRate: 10,
+  repeat: -1
+});
+
+this.anims.create({
+  key: 'jump',
+  frames: this.anims.generateFrameNumbers('player', { start: 8, end: 10 }),
+  frameRate: 10,
+  repeat: -1
+});
+
+function update() {
+  // Controla o movimento do jogador
+  if (this.cursors.left.isDown) {
+    this.player.setVelocityX(-160);
+    this.player.anims.play('walk', true);
+  } else if (this.cursors.right.isDown) {
+    this.player.setVelocityX(160);
+    this.player.anims.play('walk', true);
+  } else {
+    this.player.setVelocityX(0);
+    this.player.anims.play('idle');
+  }
+
+  if (this.cursors.up.isDown && this.player.body.onFloor()) {
+    this.player.setVelocityY(-300);
+    this.player.anims.play('jump', true);
+  }
+
+  // Adiciona lógica adicional para o seu jogo
+}
+```
+Colisões
+
+```
+// Cria um objeto com o qual o jogador pode colidir
+const platform = this.physics.add.sprite(400, 300, 'platform');
+platform.setImmovable(true);
+
+function update() {
+  // Controla o movimento do jogador
+  // ...
+
+  // Detecta colisão entre o jogador e a plataforma
+  this.physics.collide(this.player, platform);
+
+  // Adiciona lógica para o que acontece quando o jogador colide com a plataforma
+  if (this.physics.collide(this.player, platform)) {
+    // O jogador pousou na plataforma
+  }
+
+  // Adiciona lógica adicional para o seu jogo
+}
+```
+
+Saltos
+
+```
+function update() {
+  // Controla o movimento do jogador
+  // ...
+
+  // Permite que o jogador pule
+  if (this.cursors.up.isDown && this.player.body.onFloor()) {
+    this.player.setVelocityY(-300);
+  }
+
+  // Simula o salto
+  this.player.body.applyGravity();
+
+  // Adiciona lógica para o que acontece quando o jogador pousa
+  if (this.player.body.onFloor()) {
+    // O jogador pousou no chão
+  }
+
+  // Adiciona lógica adicional para o seu jogo
+}
+```
+
+7. 
+
+
+
+
+
+
+
+
+
 d) Parallax:
 
 Criar um efeito de profundidade no cenário.
