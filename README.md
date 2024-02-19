@@ -1,16 +1,16 @@
 # Prática de Computação: desenvolvendo jogos com Phaser
 
-## Descrição
+## 1. Descrição
 
 Foco no desenvolvimento do ponto de vista da lógica de programação que possibilita o funcionamento desejado no jogo: inserção e modificação de elementos, identificação de colisões, controles de movimento e eventos, paralax e física no jogo.
 
-## Assuntos relacionados
+## 2. Assuntos relacionados
 
 Design de interação
 
 Lógica algorítmica
 
-## Do que é feito um código-fonte de jogo?
+## 3. Do que é feito um código-fonte de jogo?
 
 * HTML: Estrutura básica da página.
 
@@ -36,11 +36,11 @@ Lógica algorítmica
 
 7. **ImpactJS:** ImpactJS é um motor de jogo HTML5 e JavaScript que facilita o desenvolvimento de jogos 2D de alta qualidade para navegadores da web e dispositivos móveis.
 
-## Inserção e modificação de elementos:
+## 4. Inserção e modificação de elementos:
 
 Em um jogo, você pode criar, inserir e modificar elementos. Elementos são personagens, objetos e cenários. A aula de UX vai lhe trazer o máximo de conceitos sobre esse tema.
 
-### Criação de Elementos:
+### 4.1 Criação de Elementos:
 
 A criação de elementos é o processo de gerar novos elementos HTML na página web usando JavaScript. Isso permite construir interfaces dinâmicas e interativas. As principais ferramentas para isso são:
 
@@ -56,7 +56,7 @@ div.textContent = 'Olá mundo!';
 document.body.appendChild(div);
 ```
 
-### Inserção de Elementos:
+### 4.2 Inserção de Elementos:
 
 Depois de criar um elemento, você precisa inseri-lo na estrutura do DOM (Document Object Model) para que ele seja visível na página. As principais formas de fazer isso são:
 
@@ -77,7 +77,7 @@ div2.textContent = 'Nova div';
 div1.appendChild(div2); // Insere 'div2' como filho de 'div1'
 ```
 
-### Manipulação de Atributos:
+### 4.3 Manipulação de Atributos:
 
 Além de criar e inserir elementos, você pode usar JavaScript para modificar seus atributos, como posição, tamanho, cor, etc. Isso inclui:
 
@@ -97,7 +97,7 @@ div.getAttribute('class'); // Obtém a classe da div
 div.removeAttribute('style'); // Remove o estilo da div
 ```
 
-### 4. Estilização Dinâmica:
+### 4.4 Estilização Dinâmica:
 
 Você pode usar JavaScript para modificar dinamicamente as propriedades CSS de um elemento. Isso permite criar animações e efeitos visuais interativos. As principais ferramentas para isso são:
 
@@ -115,7 +115,7 @@ div.style.width = '100px'; // Altera a largura da div
 getComputedStyle(div).getPropertyValue('font-size'); // Obtém o tamanho da fonte da div
 ```
 
-### Considerações Importantes:
+### 4.5 Considerações Importantes:
 
 * **Desempenho:** Criar e inserir muitos elementos pode afetar o desempenho da página. Use técnicas de otimização como reutilização de elementos e fragmentação de documentos.
 
@@ -123,19 +123,19 @@ getComputedStyle(div).getPropertyValue('font-size'); // Obtém o tamanho da font
 
 * **Segurança:** Valide os dados inseridos dinamicamente para evitar ataques de script entre sites (XSS).
 
-### Recursos Adicionais:
+### 4.6 Recursos Adicionais:
 
 Documentação do DOM: https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model
 Tutoriais de JavaScript: https://www.w3schools.com/js/default.asp
 
 
-### Identificação de Colisões em Jogos JavaScript
+## 5. Identificação de Colisões em Jogos JavaScript
 
 A detecção de colisões é um componente fundamental em jogos JavaScript, permitindo que objetos interajam uns com os outros de forma realista. Detectar colisões entre elementos do jogo pode ser implementada de diferentes tipos, como detectar se um retangular bateu em outro, se um círculo bateu em outro, etc.
 
 Exploremos as diferentes técnicas e seus pontos fortes e fracos:
 
-#### Métodos de Detecção de Colisões:
+### 5.1 Métodos de Detecção de Colisões:
 
 * getBoundingClientRect: Retorna um objeto com as coordenadas e dimensões do elemento.
 
@@ -149,7 +149,7 @@ Exploremos as diferentes técnicas e seus pontos fortes e fracos:
 
 * Desvantagens: Mais complexa de implementar, requer conhecimento de geometria.
 
-#### Tipos de Colisões:
+### 5.2 Tipos de Colisões:
 
 * Colisão de Ponto: Verifica se um ponto está dentro de um elemento. Útil para detectar cliques em botões ou áreas específicas.
 
@@ -159,7 +159,7 @@ Exploremos as diferentes técnicas e seus pontos fortes e fracos:
 
 * Colisão de Círculo: Verifica se dois círculos se interceptam. Útil para detectar colisões entre objetos circulares, como planetas ou bolas.
 
-### Bibliotecas de Detecção de Colisões:
+### 5.3 Bibliotecas de Detecção de Colisões:
 
 * Matter.js: Biblioteca popular que oferece física realista e facilita a detecção de colisões complexas.
 
@@ -167,7 +167,7 @@ Exploremos as diferentes técnicas e seus pontos fortes e fracos:
 
 * PolyK: Biblioteca leve para detectar colisões de polígonos com alta performance.
 
-### Considerações Importantes:
+### 5.4 Considerações Importantes:
 
 * Precisão: Escolha o método de detecção de colisão adequado ao nível de precisão necessário no seu jogo.
 
@@ -176,11 +176,11 @@ Exploremos as diferentes técnicas e seus pontos fortes e fracos:
 * Complexidade: Equilibre a necessidade de precisão com a complexidade da implementação.
 
 
-c) Controles de movimento e eventos:
+## 6. Controles de movimento e eventos:
 
 Cria controles para mover personagens e objetos, implementando eventos para interagir com o jogo, do tipo: clique, toque, teclado. 
 
-Eventos de Teclado:
+### 6.1 Eventos de Teclado:
 
 * keydown: Detecta quando uma tecla é pressionada.
 
@@ -188,7 +188,7 @@ Eventos de Teclado:
 
 * keypress: Detecta quando um caractere é digitado.
 
-Eventos de Mouse:
+### 6.2 Eventos de Mouse:
 
 * click: Detecta quando o mouse é clicado em um elemento.
 
@@ -198,7 +198,7 @@ Eventos de Mouse:
 
 * mousemove: Detecta o movimento do mouse sobre um elemento.
 
-Movimento de Elementos:
+### 6.3 Movimento de Elementos:
 
 * setInterval: Atualiza a posição de um elemento a cada intervalo de tempo.
 
@@ -236,7 +236,6 @@ function preload() {
   this.load.image('player', 'assets/player.png');
 }
 ```
-
 
 3. Criando o Cenário e o Jogador:
 
@@ -374,7 +373,7 @@ function update() {
 }
 ```
 
-### Parallax:
+## 7. Parallax:
 
 O Parallax é uma técnica gráfica que cria a ilusão de profundidade em um jogo 2D movendo diferentes camadas de fundo em velocidades diferentes. Isso pode ser usado para criar cenários mais realistas e envolventes.
 
@@ -397,7 +396,7 @@ function update() {
 }
 ```
 
-e) Física no jogo:
+## 8. Física no jogo:
 
 Aplicar conceitos básicos de física (gravidade, força, movimento). Server para simular comportamentos físicos no jogo (queda de objetos, saltos, etc.). Portanto, a física de jogo é um conjunto de regras e simulações que definem como os objetos se movem e interagem em um ambiente virtual. Ela é essencial para criar jogos realistas e interativos.
 
@@ -423,7 +422,7 @@ function update() {
 }
 ```
 
-### Conceitos de Física de Jogo:
+### 8.1 Conceitos de Física de Jogo:
 
 * Força: Uma influência que causa a mudança no movimento de um objeto.
 
@@ -440,223 +439,3 @@ function update() {
 * Salto com Trajetória: O jogador pula e a física calcula a trajetória do salto.
 
 * Colisões com Resposta Realista: Os objetos se deformam e ricocheteiam de acordo com a física.
-
-
-HTML: Estrutura básica da página.
-CSS: Estilos visuais do jogo.
-JavaScript: Lógica de programação do jogo.
-Canvas: Elemento HTML para renderizar gráficos.
-Bibliotecas: Ferramentas para facilitar o desenvolvimento de jogos (p5.js, Phaser, etc.).
-Conteúdo da Aula:
-
-1. Introdução:
-
-Apresentação dos tópicos da aula.
-Demonstração de exemplos de jogos.
-2. Inserção e modificação de elementos:
-
-Criar elementos usando createElement.
-Adicionar elementos ao DOM usando appendChild.
-Modificar propriedades de elementos usando style.
-3. Identificação de colisões:
-
-Verificar colisões entre elementos usando getBoundingClientRect.
-Implementar diferentes tipos de colisões.
-4. Controles de movimento e eventos:
-
-Criar controles usando eventos de teclado e mouse.
-Implementar eventos para interagir com o jogo.
-5. Parallax:
-
-Criar diferentes camadas de parallax.
-Implementar scroll parallax.
-6. Física no jogo:
-
-Aplicar conceitos básicos de física.
-Simular comportamentos físicos no jogo.
-7. Exemplo de código em JavaScript:
-
-Desenvolvimento de um jogo simples utilizando os tópicos da aula.
-Atividades:
-
-Criar um jogo simples utilizando os tópicos da aula.
-Implementar diferentes tipos de colisões.
-Criar um efeito de parallax.
-Simular um comportamento físico no jogo.
-Recursos Adicionais:
-
-Tutoriais online:
-https://www.w3schools.com/js/default.asp
-https://developer.mozilla.org/en-US/docs/Web/JavaScript
-Bibliotecas de jogos:
-https://p5js.org/
-https://phaser.io/
-Observações:
-
-Esta aula é um ponto de partida para o desenvolvimento de jogos com JavaScript.
-É importante aprofundar os conhecimentos em JavaScript e nas bibliotecas de jogos para criar jogos mais complexos.
-Exemplo de código:
-
-
-// Criação de um elemento canvas
-const canvas = document.createElement('canvas');
-canvas.width = 500;
-canvas.height = 500;
-document.body.appendChild(canvas);
-
-// Contexto de desenho
-const ctx = canvas.getContext('2d');
-
-// Personagem
-const personagem = {
-  x: 100,
-  y: 100,
-  velocidadeX: 5,
-  velocidadeY: 5,
-};
-
-// Função para atualizar o jogo
-function atualizar() {
-  // Limpar tela
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  // Atualizar posição do personagem
-  personagem.x += personagem.velocidadeX;
-  personagem.y += personagem.velocidadeY;
-
-  // Desenhar personagem
-  ctx.fillStyle = 'red';
-  ctx.fillRect(personagem.x, personagem.y, 50, 50);
-
-  // Solicitar a próxima atualização
-  requestAnimationFrame(atualizar);
-}
-
-// Iniciar atualização do jogo
-atualizar();
-
-
-
-
-
-
-
-
-
-Aula de JavaScript para Desenvolvimento de Jogos
-Introdução
-Nesta aula, exploraremos a lógica de programação em JavaScript para criar jogos simples, abrangendo os seguintes tópicos:
-
-Inserção e modificação de elementos: Criar e manipular elementos visuais no jogo.
-Identificação de colisões: Detectar quando objetos se chocam no jogo.
-Controles de movimento e eventos: Implementar movimentos e responder a eventos do jogador.
-Parallax: Criar a ilusão de profundidade no cenário.
-Física no jogo: Simular as leis da física no seu jogo.
-a) Inserção e modificação de elementos
-Para inserir elementos no jogo, usaremos a função createElement. Podemos criar elementos como divs, imagens e canvas. Para modificar elementos, podemos usar propriedades como style.left, style.top e innerHTML.
-
-Exemplo:
-
-JavaScript
-const div = document.createElement('div');
-div.style.left = '100px';
-div.style.top = '100px';
-div.innerHTML = 'Olá mundo!';
-document.body.appendChild(div);
-Use o código com cuidado.
-b) Identificação de colisões
-Para identificar colisões, podemos usar o método getBoundingClientRect. Este método retorna um objeto com as coordenadas do elemento. Podemos comparar as coordenadas de dois elementos para verificar se há colisão.
-
-Exemplo:
-
-JavaScript
-const div1 = document.getElementById('div1');
-const div2 = document.getElementById('div2');
-
-const rect1 = div1.getBoundingClientRect();
-const rect2 = div2.getBoundingClientRect();
-
-if (rect1.left < rect2.right &&
-    rect1.right > rect2.left &&
-    rect1.top < rect2.bottom &&
-    rect1.bottom > rect2.top) {
-  // Colisão detectada!
-}
-Use o código com cuidado.
-c) Controles de movimento e eventos
-Para implementar movimentos, podemos usar eventos como keydown e keyup. Podemos usar a função setInterval para atualizar a posição dos elementos a cada intervalo de tempo.
-
-Exemplo:
-
-JavaScript
-const player = document.getElementById('player');
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'ArrowLeft') {
-    player.style.left = parseInt(player.style.left) - 10 + 'px';
-  } else if (event.key === 'ArrowRight') {
-    player.style.left = parseInt(player.style.left) + 10 + 'px';
-  }
-});
-Use o código com cuidado.
-d) Parallax
-Para criar parallax, podemos usar várias camadas de imagens com velocidades diferentes. As camadas mais próximas do jogador se movem mais rápido que as camadas mais distantes.
-
-Exemplo:
-
-JavaScript
-const background1 = document.getElementById('background1');
-const background2 = document.getElementById('background2');
-
-document.addEventListener('scroll', () => {
-  background1.style.left = -window.scrollX / 10 + 'px';
-  background2.style.left = -window.scrollX / 20 + 'px';
-});
-Use o código com cuidado.
-e) Física no jogo
-Para simular física no jogo, podemos usar bibliotecas como Matter.js. Esta biblioteca fornece ferramentas para criar objetos físicos com massa, velocidade e gravidade.
-
-Exemplo:
-
-JavaScript
-const Engine = Matter.Engine;
-const World = Matter.World;
-const Bodies = Matter.Bodies;
-
-const engine = Engine.create();
-const world = World.create(engine);
-
-const player = Bodies.rectangle(100, 100, 50, 50);
-World.add(world, player);
-
-Engine.run(engine);
-Use o código com cuidado.
-f) Exemplo de código em JavaScript
-JavaScript
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-
-// Cria o jogador
-const player = {
-  x: 100,
-  y: 100,
-  width: 50,
-  height: 50,
-};
-
-// Desenha o jogador
-function drawPlayer() {
-  ctx.fillStyle = 'red';
-  ctx.fillRect(player.x, player.y, player.width, player.height);
-}
-
-// Atualiza a posição do jogador
-function updatePlayer() {
-  if (keydown.left) {
-    player.x -= 5;
-  } else if (keydown.right) {
-    player.x += 5;
-  }
-}
-
-// Loop do jogo
