@@ -10,6 +10,18 @@ Design de interação
 
 Lógica algorítmica
 
+## Do que é feito um código-fonte de jogo?
+
+* HTML: Estrutura básica da página.
+
+* CSS: Estilos visuais do jogo.
+
+* JavaScript: Lógica de programação do jogo.
+
+* Canvas: Elemento HTML para renderizar gráficos.
+
+* Bibliotecas: Ferramentas para facilitar o desenvolvimento de jogos (p5.js, Phaser, etc.).
+
 ## Inserção e modificação de elementos:
 
 Em um jogo, você pode criar, inserir e modificar elementos. Elementos são personagens, objetos e cenários. A aula de UX vai lhe trazer o máximo de conceitos sobre esse tema.
@@ -203,7 +215,6 @@ const config = {
 const game = new Phaser.Game(config);
 ```
 
-
 2. Carregando Recursos:
 
 ```
@@ -229,10 +240,8 @@ function create() {
   this.cursors = this.input.keyboard.createCursorKeys();
 }
 ```
-
-
-   
-5. Atualizando o Jogo:
+  
+4. Atualizando o Jogo:
 
 ```
 function update() {
@@ -256,6 +265,8 @@ function update() {
   // Adiciona lógica adicional para o seu jogo
 }
 ```
+
+5. Criando animações do jogador
 
 ```
 // Cria as animações do jogador
@@ -301,7 +312,8 @@ function update() {
   // Adiciona lógica adicional para o seu jogo
 }
 ```
-Colisões
+
+6. Outro Exemplo de Colisões
 
 ```
 // Cria um objeto com o qual o jogador pode colidir
@@ -324,7 +336,7 @@ function update() {
 }
 ```
 
-Saltos
+7. Exemplo de Saltos
 
 ```
 function update() {
@@ -348,28 +360,73 @@ function update() {
 }
 ```
 
-7. 
+### Parallax:
 
+O Parallax é uma técnica gráfica que cria a ilusão de profundidade em um jogo 2D movendo diferentes camadas de fundo em velocidades diferentes. Isso pode ser usado para criar cenários mais realistas e envolventes.
 
+Como Funciona o Parallax no Phaser?
 
+No Phaser, você pode criar efeitos parallax usando a classe ParallaxLayer. Essa classe permite definir uma imagem de fundo, sua velocidade de movimento e outras propriedades.
 
+Exemplo de Parallax Simples:
 
+```
+const background = this.add.image(0, 0, 'background');
+background.setOrigin(0, 0);
 
+// Cria uma camada parallax com a imagem 'clouds'
+const clouds = this.add.parallaxLayer(0, 0, 'clouds', 800, 600);
 
+function update() {
+  // Move a camada parallax das nuvens
+  clouds.setTilePosition(clouds.x - 0.5);
+}
+```
 
-
-d) Parallax:
-
-Criar um efeito de profundidade no cenário.
-Implementar diferentes tipos de parallax (multicamadas, scroll parallax).
 e) Física no jogo:
 
-Aplicar conceitos básicos de física (gravidade, força, movimento).
-Simular comportamentos físicos no jogo (queda de objetos, saltos, etc.).
-f) Exemplo de código em JavaScript:
+Aplicar conceitos básicos de física (gravidade, força, movimento). Server para simular comportamentos físicos no jogo (queda de objetos, saltos, etc.). Portanto, a física de jogo é um conjunto de regras e simulações que definem como os objetos se movem e interagem em um ambiente virtual. Ela é essencial para criar jogos realistas e interativos.
 
-Implementar os tópicos acima em um jogo simples.
-Recursos:
+Como Funciona a Física no Phaser?
+
+O Phaser usa o motor de física **Arcade.js** para simular a física do jogo. O **Arcade.js** oferece uma variedade de recursos para criar movimentos realistas, colisões e interações entre objetos.
+
+Exemplo de Física Simples:
+
+```
+// Cria um sprite para o jogador
+const player = this.physics.add.sprite(100, 100, 'player');
+
+// Define a gravidade
+this.physics.world.gravity.y = 300;
+
+function update() {
+  // Controla o movimento do jogador
+  // ...
+
+  // Aplica a física ao jogador
+  this.physics.world.update();
+}
+```
+
+### Conceitos de Física de Jogo:
+
+* Força: Uma influência que causa a mudança no movimento de um objeto.
+
+* Massa: A propriedade de um objeto que resiste à mudança de movimento.
+
+* Velocidade: A taxa de mudança de posição de um objeto.
+
+* Aceleração: A taxa de mudança de velocidade de um objeto.
+
+* Colisão: A interação entre dois ou mais objetos.
+
+* Movimento com Impulso: O jogador aplica força a um objeto para movê-lo.
+
+* Salto com Trajetória: O jogador pula e a física calcula a trajetória do salto.
+
+* Colisões com Resposta Realista: Os objetos se deformam e ricocheteiam de acordo com a física.
+
 
 HTML: Estrutura básica da página.
 CSS: Estilos visuais do jogo.
