@@ -20,7 +20,21 @@ Lógica algorítmica
 
 * Canvas: Elemento HTML para renderizar gráficos.
 
-* Bibliotecas: Ferramentas para facilitar o desenvolvimento de jogos (p5.js, Phaser, etc.).
+* Bibliotecas: Ferramentas para facilitar o desenvolvimento de jogos, que no nosso caso será o Phaser, mas existem outras como:
+
+1. **Phaser:** Phaser é uma estrutura de jogo rápida e poderosa que permite o desenvolvimento de jogos HTML5 e JavaScript. Ele oferece uma ampla gama de recursos para criação de jogos 2D, incluindo física, animação, áudio e suporte a várias plataformas.
+
+2. **Three.js:** Se você está interessado em desenvolver jogos 3D para a web, o Three.js é uma ótima opção. Ele é uma biblioteca JavaScript 3D que facilita a criação de gráficos 3D interativos e imersivos no navegador.
+
+3. **Babylon.js:** Assim como o Three.js, o Babylon.js é uma biblioteca JavaScript 3D para o desenvolvimento de jogos e aplicativos interativos 3D na web.
+
+4. **PixiJS:** PixiJS é uma biblioteca 2D rápida e leve para renderização de gráficos interativos. É amplamente utilizado para criar jogos 2D de alto desempenho para desktop e dispositivos móveis.
+
+5. **CreateJS:** CreateJS é uma suíte de bibliotecas JavaScript que inclui módulos para criação de gráficos vetoriais, áudio, animação e interação com sprites. É útil para desenvolver jogos 2D e aplicativos interativos.
+
+6. **Cocos2d-JS:** Cocos2d-JS é uma estrutura de desenvolvimento de jogos 2D baseada em JavaScript que é uma adaptação do popular motor de jogo Cocos2d-x. Oferece suporte para várias plataformas, incluindo web e móvel.
+
+7. **ImpactJS:** ImpactJS é um motor de jogo HTML5 e JavaScript que facilita o desenvolvimento de jogos 2D de alta qualidade para navegadores da web e dispositivos móveis.
 
 ## Inserção e modificação de elementos:
 
