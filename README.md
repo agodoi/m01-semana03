@@ -12,15 +12,15 @@ Lógica algorítmica
 
 ## 3. Do que é feito um código-fonte de jogo?
 
-* HTML: Estrutura básica da página.
+* **HTML:** estrutura básica da página.
 
-* CSS: Estilos visuais do jogo.
+* **CSS:** estilos visuais do jogo.
 
-* JavaScript: Lógica de programação do jogo.
+* **JavaScript:** lógica de programação do jogo.
 
-* Canvas: Elemento HTML para renderizar gráficos.
+* **Canvas:** elemento HTML para renderizar gráficos.
 
-* Bibliotecas: Ferramentas para facilitar o desenvolvimento de jogos, que no nosso caso será o Phaser, mas existem outras como:
+* **Bibliotecas:** ferramentas para facilitar o desenvolvimento de jogos, que no nosso caso será o Phaser, mas existem outras como:
 
 1. **Phaser:** Phaser é uma estrutura de jogo rápida e poderosa que permite o desenvolvimento de jogos HTML5 e JavaScript. Ele oferece uma ampla gama de recursos para criação de jogos 2D, incluindo física, animação, áudio e suporte a várias plataformas.
 
