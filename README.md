@@ -306,6 +306,7 @@ this.physics.add.collider(player, enemies, (player, enemy) => {
 
 Tiles (ladrilhos em português) são pequenos elementos gráficos quadrados, retangulares ou hexagonais que servem como unidades básicas para a construção de cenários em jogos 2D. São como peças de um quebra-cabeça que, juntas, formam o ambiente do jogo.
 
+```
 // Cria um mapa de tiles
 const map = this.add.tilemap('map');
 const layer = map.createLayer('CollisionLayer', 'tiles');
@@ -321,7 +322,7 @@ this.physics.add.collider(player, layer, () => {
   // Função a ser executada quando o jogador colide com uma tile
   console.log('Colisão com tile!');
 });
-
+```
 
 **d) Detecção de Sobreposição:**
 
