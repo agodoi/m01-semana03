@@ -1,6 +1,6 @@
 # Horários de Atendimento do Prof. André Godoi
 
-* Terças e quintas-feiras, das 8h30 às 10h, e das 14h às 15h30.
+* Plantão de dúvidas, toda terça e quinta-feira, das 8h30 às 10h, e das 14h às 15h30.
 
 * Demais dias, deixar mensagem no Slack que respondo assim que possível, pois o professor não é 40h no Inteli, e por isso, assim que possível, ele responderá as mensagens.
 
