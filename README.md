@@ -627,8 +627,9 @@ Um sorteio contemplará 10 de alunos para explicar para a sala 20 linhas do **sc
 1. Estudante 01 --> comentará e explicará da linha 1 à 20
   
 3. Estudante 02 --> comentará e explicará da linha 21 à 40
+   
 ...
 
-10. Estudante 03 --> comentará da 180 à 203 (última linha)
+10. Estudante 10--> comentará da 180 à 203 (última linha)
 
 E quem vier aqui na frente, terá um prêmio!
