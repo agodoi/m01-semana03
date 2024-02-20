@@ -644,6 +644,13 @@ Um sorteio contemplará 10 de alunos para explicar para a sala 20 linhas do **sc
 
 E quem vier aqui na frente, terá um prêmio!
 
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana03/blob/main/imgs/turma11.png">
+   <img alt="Região e Zonas AWS" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma11.png)">
+</picture>
+
+
 ## Ponderada da Semana
 
 [Ponderada Semana 03](https://github.com/InteliContent/M1/blob/main/Semana_03/tutorial/Semana_03.md)
