@@ -6,7 +6,7 @@
 
 * Finais de semana: é dia de maldade, sem atendimento urgente!
 
-* Monitoria: Filipi Kikuchi (filipi.kikuchi@sou.inteli.edu.br), que atenderá nas segundas, quartas e sextas-feiras, das 8h30 às 9h30 e das 13h às 14h. Ele estará no Ateliê de vocês.
+* Monitoria: Filipi Kikuchi (filipi.kikuchi@sou.inteli.edu.br), que atenderá quartas e sextas-feiras, das 8h30 às 9h30 e das 12h45 às 13h45 (à confirmar). Ele estará no Ateliê de vocês.
 
 # Prática de Computação: desenvolvendo jogos com Phaser
 
