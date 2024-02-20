@@ -1,3 +1,13 @@
+# Horários de Atendimento do Prof. André Godoi
+
+* Terças e quintas-feiras, das 8h30 às 10h, e das 14h às 15h30.
+
+* Demais dias, deixar mensagem no Slack que respondo assim que possível, pois o professor não é 40h no Inteli, e por isso, assim que possível, ele responderá as mensagens.
+
+* Finais de semana: é dia de maldade, sem atendimento urgente!
+
+* Monitoria: Filipi Kikuchi (filipi.kikuchi@sou.inteli.edu.br), que atenderá nas segundas, quartas e sextas-feiras, das 8h30 às 9h30 e das 13h às 14h. Ele estará no Ateliê de vocês.
+
 # Prática de Computação: desenvolvendo jogos com Phaser
 
 ## 1. Descrição
