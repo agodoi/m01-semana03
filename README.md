@@ -646,6 +646,7 @@ E quem vier aqui na frente, terá um prêmio!
 
 ## Ponderada da Semana
 
+[Ponderada Semana 03](https://github.com/InteliContent/M1/blob/main/Semana_03/tutorial/Semana_03.md)
 
 No fechamento do dia, trarei dicas importantes.
 
