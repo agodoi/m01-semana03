@@ -624,9 +624,11 @@ Você pode até usar o chatGPT ou Gemini para lhe ajudar. Mas atenção, não ex
 
 Um sorteio contemplará 10 de alunos para explicar para a sala 20 linhas do **script.js**
 
-Estudante 01 --> comentará e explicará da linha 1 à 20
-Estudante 02 --> comentará e explicará da linha 21 à 40
+1. Estudante 01 --> comentará e explicará da linha 1 à 20
+  
+3. Estudante 02 --> comentará e explicará da linha 21 à 40
 ...
-Estudante 03 --> comentará da 180 à 203 (última linha)
+
+10. Estudante 03 --> comentará da 180 à 203 (última linha)
 
 E quem vier aqui na frente, terá um prêmio!
