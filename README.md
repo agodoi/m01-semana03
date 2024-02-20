@@ -615,3 +615,18 @@ function update() {
 * Salto com Trajetória: O jogador pula e a física calcula a trajetória do salto.
 
 * Colisões com Resposta Realista: Os objetos se deformam e ricocheteiam de acordo com a física.
+
+
+## Exercício:
+
+Acesse o [Phazer](https://github.com/pacifiquem/phaser-star-game) e comente as linhas. Use suas anotações dos autoestudos para fazer essa tarefa.
+Você pode até usar o chatGPT ou Gemini para lhe ajudar. Mas atenção, não exagere. Tente relembrar dos seus autoestudos.
+
+Um sorteio contemplará 10 de alunos para explicar para a sala 20 linhas do **script.js**
+
+Estudante 01 --> comentará e explicará da linha 1 à 20
+Estudante 02 --> comentará e explicará da linha 21 à 40
+...
+Estudante 03 --> comentará da 180 à 203 (última linha)
+
+E quem vier aqui na frente, terá um prêmio!
