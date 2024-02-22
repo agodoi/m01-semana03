@@ -7,8 +7,8 @@
 * Finais de semana: é dia de maldade, sem atendimento urgente!
 
 * Monitorias:
-*   Turma 11: Filipi Kikuchi (filipi.kikuchi@sou.inteli.edu.br), que atenderá quartas e sextas-feiras, das 8h30 às 9h30 e das 12h45 às 13h45.
-*   Turma 13: Fernando Vasconcellos (Fernando.Vasconcellos@sou.inteli.edu.br), atenderá nas segundas e quartas-feiras  Ele estará no Ateliê de vocês.
+*   Turma 11: Filipi Kikuchi (filipi.kikuchi@sou.inteli.edu.br), que atenderá quartas e sextas-feiras, das 8h30 às 9h30 e das 12h45 às 13h45 no ateliê da turma.
+*   Turma 13: Fernando Vasconcellos (Fernando.Vasconcellos@sou.inteli.edu.br), atenderá nas segundas e quartas-feiras, das 8h30 às 9h30 no ateliê da turma e outras 2h de atendimento será por pedidos feitas no e-mail dele.
 
 # Prática de Computação: desenvolvendo jogos com Phaser
 
