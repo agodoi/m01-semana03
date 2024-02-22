@@ -648,8 +648,8 @@ E quem vier aqui na frente, terá um prêmio!
 
 
 <picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana03/blob/main/imgs/turma11.png">
-   <img alt="Região e Zonas AWS" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma11.png)">
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana03/blob/main/imgs/turma13.png">
+   <img alt="RTurma 13" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma13.png)">
 </picture>
 
 
