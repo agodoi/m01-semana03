@@ -6,7 +6,9 @@
 
 * Finais de semana: é dia de maldade, sem atendimento urgente!
 
-* Monitoria: Filipi Kikuchi (filipi.kikuchi@sou.inteli.edu.br), que atenderá quartas e sextas-feiras, das 8h30 às 9h30 e das 12h45 às 13h45 (à confirmar). Ele estará no Ateliê de vocês.
+* Monitorias:
+*   Turma 11: Filipi Kikuchi (filipi.kikuchi@sou.inteli.edu.br), que atenderá quartas e sextas-feiras, das 8h30 às 9h30 e das 12h45 às 13h45.
+*   Turma 13: Fernando Vasconcellos (Fernando.Vasconcellos@sou.inteli.edu.br), atenderá nas segundas e quartas-feiras  Ele estará no Ateliê de vocês.
 
 # Prática de Computação: desenvolvendo jogos com Phaser
 
