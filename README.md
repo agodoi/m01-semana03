@@ -649,12 +649,12 @@ E quem vier aqui na frente, terá um prêmio!
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana03/blob/main/imgs/turma11.png">
-   <img alt="RTurma 11" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma11.png)">
+   <img alt="Turma 11" width="200" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma11.png)">
 </picture>
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana03/blob/main/imgs/turma13.png">
-   <img alt="RTurma 13" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma13.png)">
+   <img alt="Turma 13" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma13.png)">
 </picture>
 
 
