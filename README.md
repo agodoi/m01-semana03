@@ -654,7 +654,7 @@ E quem vier aqui na frente, terá um prêmio!
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/m01-semana03/blob/main/imgs/turma13.png">
-   <img alt="Turma 13" width="390" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma13.png)">
+   <img alt="Turma 13" width="393" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/m01-semana03/blob/main/imgs/turma13.png)">
 </picture>
 
 
