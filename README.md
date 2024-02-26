@@ -631,7 +631,7 @@ function update() {
 
 ## Exercício:
 
-Acesse o [Phazer](https://github.com/pacifiquem/phaser-star-game) e comente as linhas. Use suas anotações dos autoestudos para fazer essa tarefa.
+Acesse o [Phaser](https://github.com/pacifiquem/phaser-star-game) e comente as linhas. Use suas anotações dos autoestudos para fazer essa tarefa.
 Você pode até usar o chatGPT ou Gemini para lhe ajudar. Mas atenção, não exagere. Tente relembrar dos seus autoestudos.
 
 Um sorteio contemplará 10 de alunos para explicar para a sala 20 linhas do **script.js**
